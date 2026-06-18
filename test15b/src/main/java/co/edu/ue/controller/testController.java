@@ -24,7 +24,7 @@ public class testController {
 	}
 
 	@GetMapping(value="/test_ci")
-	plublic String ci(){
+	public String ci(){
 		return "Prueba de integración continua";
 	}
 	
