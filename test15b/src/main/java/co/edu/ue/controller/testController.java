@@ -20,7 +20,12 @@ public class testController {
 	
 	@GetMapping(value="/saludar")
 	public String hello() {
-		return "Hola estudiantes de la 15A";
+		return "Hola estudiantes de la 15A :)";
+	}
+
+	GetMapping(value="/test_ci")
+	plublic String ci(){
+		return "Prueba de integración continua";
 	}
 	
 	@GetMapping(value="/sumar")
