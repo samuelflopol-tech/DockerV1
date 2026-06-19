@@ -23,7 +23,7 @@ public class testController {
 		return "Hola estudiantes de la 15A :)";
 	}
 
-	@GetMapping(value="/test_ci")
+	@GetMapping(value="/test_c")
 	public String ci(){
 		return "Prueba de integración continua";
 	}
