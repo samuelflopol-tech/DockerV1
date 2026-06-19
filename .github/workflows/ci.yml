@@ -36,4 +36,12 @@ jobs:
         run: docker push samflopol/backend-springboot:latest
       - name: verificar JAR generado
         run: ls -la target
-      
+  deploy-backend:
+    needs: build-backend
+    runs-on: self-hosted
+    steps:
+    - name: Actualizar contenedor backend
+      run: |
+        cd C:\Users\samue\Downloads\proyecto_docker_compose_limpio\proyecto_docker_compose_limpio
+        docker-compose pull backend
+        docker-compose up -d backend
