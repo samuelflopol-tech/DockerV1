@@ -17,6 +17,7 @@ services:
       - "8091:8080"
     depends_on:
       - mysql
+    restart: on-failure
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/test
       SPRING_DATASOURCE_USERNAME: root
