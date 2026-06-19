@@ -27,6 +27,11 @@ public class testController {
 	public String ci(){
 		return "Prueba de integración continua";
 	}
+
+	@GetMapping(value="/test_19/06")
+	public String aqui(){
+		return "Prueba del 19 de junio";
+	}
 	
 	@GetMapping(value="/sumar")
     public int sumar(
