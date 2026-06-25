@@ -24,6 +24,7 @@ services:
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: 12345678
   frontend:
+    image: samflopol/frontend-nativo:latest
     build: ./frontend_test
     container_name: frontend-nativo
     ports:
